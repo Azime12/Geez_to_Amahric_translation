@@ -155,5 +155,6 @@ def translate():
 
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)  # Change port to the desired port (e.g., 8000)
+    # Run the app, Flask will automatically detect the available port
+    app.run(host='0.0.0.0', debug=True)
 
