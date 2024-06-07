@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import torch
 import torch.nn as nn
-import random
+import random   
 import json
 from collections import defaultdict
 
@@ -155,4 +155,5 @@ def translate():
 
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8000)  # Change port to the desired port (e.g., 8000)
+
